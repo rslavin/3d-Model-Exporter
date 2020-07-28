@@ -1,5 +1,7 @@
 import {Matrix4, Vector3, Vector4} from "three";
 
+const scale = 9.85;
+
 let meshProcessor = function () {
 };
 
@@ -28,7 +30,7 @@ meshProcessor.prototype = {
         let vertex = new Vector3();
         let nbVertex = 0;
         let matrixRotation = new Matrix4().makeRotationX(90 * Math.PI / 180);
-        let matrixScale = new Matrix4().makeScale(10, 10, 10);
+        let matrixScale = new Matrix4().makeScale(scale, scale, scale);
         let newGeometry = geometry.clone(geometry);
 
         // vertices
