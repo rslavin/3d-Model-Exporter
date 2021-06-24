@@ -165,7 +165,7 @@ document.body.arrive(".footer", {onceOnly: true, existing: true}, function () {
         title: "Subdivision Passes"
     });
     qualitySelector.append(jQuery("<option></option>").attr("value", 2).text("Highest"))
-        .append(jQuery("<option></option>").attr("value", 1).text("Medium"))
+        .append(jQuery("<option></option>").attr("value", 1).attr("selected", "selected").text("Medium"))
         .append(jQuery("<option></option>").attr("value", 0).text("Lowest"));
 
     let baseQualitySelector = jQuery("<select />", {
@@ -176,7 +176,7 @@ document.body.arrive(".footer", {onceOnly: true, existing: true}, function () {
         title: "Subdivision Passes (Base)"
     });
     baseQualitySelector.append(jQuery("<option></option>").attr("value", 2).text("Highest"))
-        .append(jQuery("<option></option>").attr("value", 1).text("Medium"))
+        .append(jQuery("<option></option>").attr("value", 1).attr("selected", "selected").text("Medium"))
         .append(jQuery("<option></option>").attr("value", 0).text("Lowest"));
 
     menuContainer.append(jQuery("<label />", {
